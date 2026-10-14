@@ -10,16 +10,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Soft ambient background -->
-  <div class="ambient"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
 
-  <!-- Navigation -->
-  <header class="header">
+  <header class="header" id="header">
     <a href="#top" class="logo">Test</a>
     <nav class="nav">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#work">Work</a>
+      <a href="#github">GitHub</a>
       <a href="#contact">Contact</a>
     </nav>
     <button class="menu-btn" id="menu-btn" aria-label="Menu">
@@ -31,286 +32,325 @@
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#work">Work</a>
+    <a href="#github">GitHub</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <main>
-    <!-- Hero -->
     <section class="hero" id="top">
-      <div class="hero-inner">
-        <p class="hero-eyebrow fade-up">MERN · Java · Git</p>
+      <div class="hero-content">
+        <div class="hero-badge fade-up">
+          <span class="badge-dot"></span>
+          Available for work
+        </div>
         <h1 class="hero-title fade-up delay-1">
-          Building thoughtful<br />digital experiences
+          Crafting calm,<br />
+          <em>reliable</em> software
         </h1>
-        <p class="hero-sub fade-up delay-2">
-          Full-stack developer focused on clean architecture, 
-          reliable systems, and calm user interfaces.
+        <p class="hero-desc fade-up delay-2">
+          Full-stack developer working with MERN, Java, and Git.
+          I build systems that are clear, maintainable, and pleasant to use.
         </p>
-        <div class="hero-cta fade-up delay-3">
-          <a href="#work" class="btn primary">View work</a>
-          <a href="#contact" class="btn ghost">Get in touch</a>
+        <div class="hero-actions fade-up delay-3">
+          <a href="#work" class="btn btn-fill">See selected work</a>
+          <a href="#contact" class="btn btn-line">Start a conversation</a>
+        </div>
+        <div class="hero-meta fade-up delay-4">
+          <div class="meta-item">
+            <span class="meta-num" data-to="5">0</span>
+            <span class="meta-label">Years</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-num" data-to="40">0</span>
+            <span class="meta-label">Projects</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-num" data-to="1200">0</span>
+            <span class="meta-label">Commits</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual fade-up delay-2">
+        <div class="visual-card">
+          <div class="vc-header">
+            <span class="vc-dot"></span>
+            <span class="vc-dot"></span>
+            <span class="vc-dot"></span>
+            <span class="vc-title">stack.js</span>
+          </div>
+          <pre class="vc-code"><code><span class="c-key">const</span> <span class="c-var">stack</span> = {
+  <span class="c-prop">frontend</span>: <span class="c-str">"React"</span>,
+  <span class="c-prop">backend</span>:  <span class="c-str">"Node · Java"</span>,
+  <span class="c-prop">data</span>:     <span class="c-str">"MongoDB"</span>,
+  <span class="c-prop">flow</span>:     <span class="c-str">"Git · GitHub"</span>
+};</code></pre>
         </div>
       </div>
     </section>
 
-    <!-- About -->
     <section class="section about" id="about">
       <div class="container">
-        <div class="section-label fade-up">About</div>
-        <div class="about-layout">
-          <div class="about-text fade-up">
-            <h2>A quiet approach to complex systems</h2>
+        <div class="section-head fade-up">
+          <span class="section-tag">About</span>
+          <h2>A measured approach<br />to full-stack work</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-main fade-up">
             <p>
-              I work primarily with the MERN stack and Java, writing clear, 
-              maintainable code and using Git with intention. I care about 
-              structure, performance, and interfaces that feel effortless.
+              I specialize in the <strong>MERN stack</strong> and solid <strong>Java</strong> backends,
+              with a strong emphasis on clean Git workflows. My focus is on writing code
+              that is easy to reason about, reliable under load, and pleasant to maintain.
             </p>
             <p>
-              Whether it’s a React frontend, a Node or Spring Boot service, 
-              or a well-structured repository — the goal is always the same: 
-              make it reliable and easy to understand.
+              From designing MongoDB schemas and Express APIs to building React interfaces
+              and Spring Boot services — I care about the full path from idea to production.
             </p>
+            <div class="about-pills">
+              <span>Clean architecture</span>
+              <span>Thoughtful UX</span>
+              <span>Reliable delivery</span>
+              <span>Open source mindset</span>
+            </div>
           </div>
-          <div class="about-facts fade-up delay-1">
-            <div class="fact">
-              <span class="fact-num" data-to="5">0</span>
-              <span class="fact-label">Years building</span>
+          <div class="about-side fade-up delay-1">
+            <div class="side-card">
+              <div class="side-icon">◆</div>
+              <h3>MERN</h3>
+              <p>End-to-end JavaScript applications from database to interface.</p>
             </div>
-            <div class="fact">
-              <span class="fact-num" data-to="40">0</span>
-              <span class="fact-label">Projects shipped</span>
+            <div class="side-card">
+              <div class="side-icon">◇</div>
+              <h3>Java</h3>
+              <p>Backend services with Spring Boot and clear domain design.</p>
             </div>
-            <div class="fact">
-              <span class="fact-num" data-to="1200">0</span>
-              <span class="fact-label">Commits</span>
+            <div class="side-card">
+              <div class="side-icon">○</div>
+              <h3>Git</h3>
+              <p>Intentional commits, clean history, and collaborative workflows.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills -->
     <section class="section skills" id="skills">
       <div class="container">
-        <div class="section-label fade-up">Skills</div>
-        <h2 class="section-title fade-up">What I work with</h2>
-
-        <div class="skills-layout">
-          <div class="skill-group fade-up">
-            <h3>Frontend</h3>
-            <ul class="skill-list">
+        <div class="section-head fade-up">
+          <span class="section-tag">Skills</span>
+          <h2>Tools & technologies</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card fade-up">
+            <div class="skill-card-head">
+              <h3>Frontend</h3>
+              <span class="skill-count">04</span>
+            </div>
+            <ul class="skill-rows">
               <li>
-                <span>React</span>
-                <div class="bar"><div class="fill" data-w="95"></div></div>
+                <div class="skill-top"><span>React</span><span>95%</span></div>
+                <div class="track"><div class="progress" data-w="95"></div></div>
               </li>
               <li>
-                <span>JavaScript / TypeScript</span>
-                <div class="bar"><div class="fill" data-w="92"></div></div>
+                <div class="skill-top"><span>JavaScript / TypeScript</span><span>92%</span></div>
+                <div class="track"><div class="progress" data-w="92"></div></div>
               </li>
               <li>
-                <span>HTML / CSS / Tailwind</span>
-                <div class="bar"><div class="fill" data-w="90"></div></div>
+                <div class="skill-top"><span>HTML / CSS / Tailwind</span><span>90%</span></div>
+                <div class="track"><div class="progress" data-w="90"></div></div>
               </li>
               <li>
-                <span>Next.js</span>
-                <div class="bar"><div class="fill" data-w="85"></div></div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="skill-group fade-up delay-1">
-            <h3>Backend</h3>
-            <ul class="skill-list">
-              <li>
-                <span>Node.js / Express</span>
-                <div class="bar"><div class="fill" data-w="93"></div></div>
-              </li>
-              <li>
-                <span>MongoDB</span>
-                <div class="bar"><div class="fill" data-w="90"></div></div>
-              </li>
-              <li>
-                <span>Java / Spring Boot</span>
-                <div class="bar"><div class="fill" data-w="88"></div></div>
-              </li>
-              <li>
-                <span>REST / GraphQL</span>
-                <div class="bar"><div class="fill" data-w="87"></div></div>
+                <div class="skill-top"><span>Next.js</span><span>85%</span></div>
+                <div class="track"><div class="progress" data-w="85"></div></div>
               </li>
             </ul>
           </div>
-
-          <div class="skill-group fade-up delay-2">
-            <h3>Workflow</h3>
-            <ul class="skill-list">
+          <div class="skill-card fade-up delay-1">
+            <div class="skill-card-head">
+              <h3>Backend</h3>
+              <span class="skill-count">04</span>
+            </div>
+            <ul class="skill-rows">
               <li>
-                <span>Git / GitHub</span>
-                <div class="bar"><div class="fill" data-w="95"></div></div>
+                <div class="skill-top"><span>Node.js / Express</span><span>93%</span></div>
+                <div class="track"><div class="progress" data-w="93"></div></div>
               </li>
               <li>
-                <span>Docker</span>
-                <div class="bar"><div class="fill" data-w="80"></div></div>
+                <div class="skill-top"><span>MongoDB</span><span>90%</span></div>
+                <div class="track"><div class="progress" data-w="90"></div></div>
               </li>
               <li>
-                <span>CI / CD</span>
-                <div class="bar"><div class="fill" data-w="82"></div></div>
+                <div class="skill-top"><span>Java / Spring Boot</span><span>88%</span></div>
+                <div class="track"><div class="progress" data-w="88"></div></div>
               </li>
               <li>
-                <span>Testing</span>
-                <div class="bar"><div class="fill" data-w="83"></div></div>
+                <div class="skill-top"><span>REST / GraphQL</span><span>87%</span></div>
+                <div class="track"><div class="progress" data-w="87"></div></div>
+              </li>
+            </ul>
+          </div>
+          <div class="skill-card fade-up delay-2">
+            <div class="skill-card-head">
+              <h3>Workflow</h3>
+              <span class="skill-count">04</span>
+            </div>
+            <ul class="skill-rows">
+              <li>
+                <div class="skill-top"><span>Git / GitHub</span><span>95%</span></div>
+                <div class="track"><div class="progress" data-w="95"></div></div>
+              </li>
+              <li>
+                <div class="skill-top"><span>Docker</span><span>80%</span></div>
+                <div class="track"><div class="progress" data-w="80"></div></div>
+              </li>
+              <li>
+                <div class="skill-top"><span>CI / CD</span><span>82%</span></div>
+                <div class="track"><div class="progress" data-w="82"></div></div>
+              </li>
+              <li>
+                <div class="skill-top"><span>Testing</span><span>83%</span></div>
+                <div class="track"><div class="progress" data-w="83"></div></div>
               </li>
             </ul>
           </div>
         </div>
+        <div class="tech-strip fade-up">
+          <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
+          <span>Java</span><span>Spring Boot</span><span>Git</span><span>GitHub</span>
+          <span>TypeScript</span><span>Docker</span><span>Next.js</span><span>Tailwind</span>
+        </div>
       </div>
     </section>
 
-    <!-- Work -->
     <section class="section work" id="work">
       <div class="container">
-        <div class="section-label fade-up">Work</div>
-        <h2 class="section-title fade-up">Selected projects</h2>
-
-        <div class="work-list">
-          <article class="work-item fade-up">
-            <div class="work-num">01</div>
-            <div class="work-body">
+        <div class="section-head fade-up">
+          <span class="section-tag">Work</span>
+          <h2>Selected projects</h2>
+        </div>
+        <div class="work-grid">
+          <article class="project fade-up">
+            <div class="project-accent a1"></div>
+            <div class="project-body">
+              <span class="project-num">01</span>
               <h3>Project 1</h3>
-              <p>Full-stack MERN application with authentication and a clean, modular architecture.</p>
-              <div class="work-tags">
-                <span>React</span><span>Node.js</span><span>MongoDB</span>
-              </div>
-            </div>
-            <div class="work-links">
-              <a href="#">Demo</a>
-              <a href="#">Code</a>
+              <p>Full-stack MERN application with authentication, modular structure, and a calm interface.</p>
+              <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+              <div class="project-links"><a href="#">View demo</a><a href="#">Source</a></div>
             </div>
           </article>
-
-          <article class="work-item fade-up">
-            <div class="work-num">02</div>
-            <div class="work-body">
+          <article class="project fade-up delay-1">
+            <div class="project-accent a2"></div>
+            <div class="project-body">
+              <span class="project-num">02</span>
               <h3>Project 2</h3>
-              <p>Real-time application built with Socket.io, React and Express.</p>
-              <div class="work-tags">
-                <span>Socket.io</span><span>React</span><span>Express</span>
-              </div>
-            </div>
-            <div class="work-links">
-              <a href="#">Demo</a>
-              <a href="#">Code</a>
+              <p>Real-time experience built with Socket.io, React and Express. Focus on clarity and speed.</p>
+              <div class="project-tags"><span>Socket.io</span><span>React</span><span>Express</span></div>
+              <div class="project-links"><a href="#">View demo</a><a href="#">Source</a></div>
             </div>
           </article>
-
-          <article class="work-item fade-up">
-            <div class="work-num">03</div>
-            <div class="work-body">
+          <article class="project fade-up delay-2">
+            <div class="project-accent a3"></div>
+            <div class="project-body">
+              <span class="project-num">03</span>
               <h3>Project 3</h3>
-              <p>Spring Boot REST API with JWT authentication and role-based access.</p>
-              <div class="work-tags">
-                <span>Java</span><span>Spring Boot</span><span>JPA</span>
-              </div>
-            </div>
-            <div class="work-links">
-              <a href="#">Demo</a>
-              <a href="#">Code</a>
+              <p>Spring Boot REST API with JWT security, role-based access, and thorough documentation.</p>
+              <div class="project-tags"><span>Java</span><span>Spring Boot</span><span>JPA</span></div>
+              <div class="project-links"><a href="#">View demo</a><a href="#">Source</a></div>
             </div>
           </article>
-
-          <article class="work-item fade-up">
-            <div class="work-num">04</div>
-            <div class="work-body">
+          <article class="project fade-up">
+            <div class="project-accent a4"></div>
+            <div class="project-body">
+              <span class="project-num">04</span>
               <h3>Project 4</h3>
-              <p>Next.js frontend paired with MongoDB. Focused on clarity and performance.</p>
-              <div class="work-tags">
-                <span>Next.js</span><span>MongoDB</span><span>Tailwind</span>
-              </div>
-            </div>
-            <div class="work-links">
-              <a href="#">Demo</a>
-              <a href="#">Code</a>
+              <p>Next.js frontend with MongoDB. Emphasis on structure, performance, and quiet design.</p>
+              <div class="project-tags"><span>Next.js</span><span>MongoDB</span><span>Tailwind</span></div>
+              <div class="project-links"><a href="#">View demo</a><a href="#">Source</a></div>
             </div>
           </article>
-
-          <article class="work-item fade-up">
-            <div class="work-num">05</div>
-            <div class="work-body">
+          <article class="project fade-up delay-1">
+            <div class="project-accent a5"></div>
+            <div class="project-body">
+              <span class="project-num">05</span>
               <h3>Project 5</h3>
-              <p>Java microservice with Docker support and event-driven patterns.</p>
-              <div class="work-tags">
-                <span>Java</span><span>Docker</span><span>Kafka</span>
-              </div>
-            </div>
-            <div class="work-links">
-              <a href="#">Demo</a>
-              <a href="#">Code</a>
+              <p>Java microservice with Docker, messaging, and clear separation of concerns.</p>
+              <div class="project-tags"><span>Java</span><span>Docker</span><span>Kafka</span></div>
+              <div class="project-links"><a href="#">View demo</a><a href="#">Source</a></div>
             </div>
           </article>
-
-          <article class="work-item fade-up">
-            <div class="work-num">06</div>
-            <div class="work-body">
+          <article class="project fade-up delay-2">
+            <div class="project-accent a6"></div>
+            <div class="project-body">
+              <span class="project-num">06</span>
               <h3>Project 6</h3>
-              <p>Analytics dashboard with charts, permissions and export features.</p>
-              <div class="work-tags">
-                <span>React</span><span>Node</span><span>Charts</span>
-              </div>
-            </div>
-            <div class="work-links">
-              <a href="#">Demo</a>
-              <a href="#">Code</a>
+              <p>Analytics dashboard with charts, permissions, and thoughtful information hierarchy.</p>
+              <div class="project-tags"><span>React</span><span>Node</span><span>Charts</span></div>
+              <div class="project-links"><a href="#">View demo</a><a href="#">Source</a></div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <section class="section github" id="github">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="section-tag">GitHub</span>
+          <h2>Open work & activity</h2>
+        </div>
+        <div class="github-row fade-up">
+          <div class="gh-stat"><span class="gh-num" data-to="42">0</span><span class="gh-label">Repositories</span></div>
+          <div class="gh-stat"><span class="gh-num" data-to="184">0</span><span class="gh-label">Stars</span></div>
+          <div class="gh-stat"><span class="gh-num" data-to="67">0</span><span class="gh-label">Forks</span></div>
+          <div class="gh-stat"><span class="gh-num" data-to="312">0</span><span class="gh-label">Followers</span></div>
+        </div>
+        <div class="github-cta fade-up">
+          <a href="#" class="btn btn-fill">View GitHub profile — test</a>
+        </div>
+      </div>
+    </section>
+
     <section class="section contact" id="contact">
       <div class="container">
-        <div class="section-label fade-up">Contact</div>
-        <h2 class="section-title fade-up">Let’s talk</h2>
-        <p class="contact-intro fade-up">
-          Open to new projects and collaborations. Feel free to reach out.
-        </p>
-
-        <div class="contact-layout">
-          <div class="contact-details fade-up">
-            <a href="#" class="detail">
-              <span class="detail-label">Email</span>
-              <span class="detail-value">test</span>
-            </a>
-            <a href="#" class="detail">
-              <span class="detail-label">GitHub</span>
-              <span class="detail-value">test</span>
-            </a>
-            <a href="#" class="detail">
-              <span class="detail-label">LinkedIn</span>
-              <span class="detail-value">test</span>
-            </a>
+        <div class="section-head fade-up">
+          <span class="section-tag">Contact</span>
+          <h2>Let’s work together</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info fade-up">
+            <p class="contact-lead">
+              Have a project in mind or simply want to connect?
+              I’m always open to thoughtful conversations.
+            </p>
+            <div class="contact-links">
+              <a href="#" class="c-link"><span class="c-label">Email</span><span class="c-value">test</span></a>
+              <a href="#" class="c-link"><span class="c-label">GitHub</span><span class="c-value">test</span></a>
+              <a href="#" class="c-link"><span class="c-label">LinkedIn</span><span class="c-value">test</span></a>
+            </div>
           </div>
-
           <form class="contact-form fade-up delay-1" id="form">
-            <div class="field-row">
+            <div class="form-row">
               <div class="field">
                 <label for="name">Name</label>
-                <input type="text" id="name" required />
+                <input type="text" id="name" required placeholder="Your name" />
               </div>
               <div class="field">
                 <label for="email">Email</label>
-                <input type="email" id="email" required />
+                <input type="email" id="email" required placeholder="you@example.com" />
               </div>
             </div>
             <div class="field">
               <label for="subject">Subject</label>
-              <input type="text" id="subject" required />
+              <input type="text" id="subject" required placeholder="What’s this about?" />
             </div>
             <div class="field">
               <label for="message">Message</label>
-              <textarea id="message" rows="4" required></textarea>
+              <textarea id="message" rows="5" required placeholder="Tell me a little about your project…"></textarea>
             </div>
-            <button type="submit" class="btn primary">Send message</button>
-            <p class="form-note" id="form-note"></p>
+            <button type="submit" class="btn btn-fill full">Send message</button>
+            <p class="form-status" id="form-status"></p>
           </form>
         </div>
       </div>
@@ -318,9 +358,9 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <span>© 2026 Test</span>
-      <span class="footer-right">Built with care</span>
+    <div class="container footer-inner">
+      <span class="footer-logo">Test</span>
+      <span class="footer-copy">© 2026 · Built with care</span>
     </div>
   </footer>
 
